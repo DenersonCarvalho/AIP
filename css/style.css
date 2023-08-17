@@ -1,0 +1,244 @@
+body {
+    background-color: #f6f8fa;
+    background-image: url('../img/wave.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 100vh;
+}
+main{
+    color: #0052a3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#form-cadastro{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#form-cadastro input{
+    width: 600px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+    border: solid 0.2px #949393;
+    background-color: #f6f8fa;
+}
+#form-cadastro h4{
+    color: #949393;
+    font-size: 14px;
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+#form-cadastro label input[type=submit]{
+    background-color: #ff4800;
+    color: #fff;
+}
+#form-cadastro select{
+    width: 600px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+    border: solid 0.2px #949393;
+    background-color: #f6f8fa;
+}
+#form-cadastro label input[type=submit]:hover{
+    background-color: #ff6629;
+    transform: scale(1.01, 1.01);
+}
+#form-cadastro label input[type=file]{
+    border: none;
+}
+.btn-small{
+    max-width: 100px;
+}
+.identificacao{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.identificacao div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#barra-etapas a{
+    margin: 0px 30px;
+    text-decoration: none;
+    color: #0052a3;
+    font-weight: 400;
+}
+#barra-etapas .ativo{
+        color: #ff4800; 
+        font-weight: 500;
+        text-decoration: underline;
+}
+#barra-etapas a:hover{
+    color: #ff4800;
+    transition: 0.3s ease-in-out;
+}
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+    width: 600px;
+    text-align: center;
+  }
+  .problem{
+    background-color: rgb(218, 79, 79);
+  }
+  .solution{
+    background-color: #529e58;
+  }
+/* #######################################3 */
+.logo-projeto{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border:1px solid #727272;
+    margin: 10px 0;
+}
+.aviso{
+    color: #949393;
+}
+@keyframes jello-horizontal {
+  0% {
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+            transform: scale3d(1, 1, 1);
+  }
+}
+/* Levantamento de problemas */
+.area-problemas-solucoes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.area-problemas-solucoes i{
+    font-size: 20px;
+}
+#input-problemas input[type=text], 
+#input-solucoes input[type=text]{
+    width: 570px;
+}
+
+#output{
+    width: 300px;
+    min-height: 70px;
+    padding: 10px;
+}
+/* Persona */
+.text-info{
+    font-size: 12px;
+    color: #727272;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container-personas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.persona{
+    display: flex;
+    gap: 20px;
+    width: 800px;
+    background-color: #0052a3;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.persona-area1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.persona-area2{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.persona-area1 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.persona-area-cad img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.persona-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 60px;
+    color: #727272;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px dashed  #727272;
+}
+.persona:hover{
+    background-color: #ff4800;
+    transition: .3s ease-in-out;
+}
+
+.persona-add:hover{
+    background-color: #d6d6d6;
+    transition: .3s ease-in-out;
+}
+/* Mapa da empatia */
+.inpt-small{
+    max-width: 300px;
+    max-height: 40px;
+}
+.table-mapa{
+    text-align: center;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/padrao.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <script src="https://kit.fontawesome.com/4aadeb1ec6.js" crossorigin="anonymous"></script>
+    <title>AIP</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="box-logo">
+                <span class="logo">AIP</span>
+                <span class="logo-content">Ambiente de Inovação e Prototipagem</span>
+            </div>
+            <div class="barra-acesso">
+                <a href="../../../index.html">
+                    <i class="fa-solid fa-left-long"></i>
+                </a>
+                <h5>Persona e Mapa de Valor</h6>
+                    <i class="fa-solid fa-pen"></i>
+            </div>
+    </header>
+    <main>
+        <div class="persona-area-cad"><img src="../../../img/perfil/padrao.png" alt=""></div>
+        <div id="barra-etapas">
+            <a href="persona-mapa-info.html">Dados</a>
+            <a href="persona-mapa-caracteristica.html" class="ativo">Caracteristicas</a>
+            <a href="persona-mapa-rotina.html">Rotina</a>
+            <a href="persona-mapa-insights.html">Insights</a>
+            <a href="persona-mapa-empatia.html">Mapa da Empatia</a>
+        </div>
+        <form id="form-cadastro" action="post">
+            <div>
+                <h4>Citação: *</h4>
+                <input type="text"
+                    placeholder="Escreva uma frase que represente a assência da personalidade dessa persona!">
+            </div>
+            <div>
+                <h4>Hábitos e comportamentos: *</h4>
+                <input type="text" placeholder="Escreva sobre o estilo de vida da persona">
+            </div>
+
+            <h5>Fluência Digital</h5>
+            <p class="text-info">Marque o nivel de conhecimento da persona com as seguintes interfaces</p>
+
+            <div>
+                <h4>Usando o computador</h4>
+                <input type="range" min="0" max="100" value="50" step="2">
+            </div>
+            <div>
+                <h4>Usando aplicativos</h4>
+                <input type="range" min="0" max="100" value="50" step="2">
+            </div>
+            <div>
+                <h4>Usando smartphone</h4>
+                <input type="range" min="0" max="100" value="50" step="2">
+            </div>
+            <div>
+                <h4>Comprango pela internet</h4>
+                <input type="range" min="0" max="100" value="50" step="2">
+            </div>
+
+            <label for="">
+                <input type="submit" value="Salvar">
+            </label>
+
+        </form>
+    </main>
+</body>
+
+</html>

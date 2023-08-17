@@ -1,0 +1,116 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  #output {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+<input type="text" id="inputText" placeholder="Digite alguma informação">
+<button id="submitButton">Inserir Informação</button>
+<div id="output"></div>
+
+<script>
+  const inputText = document.getElementById('inputText');
+  const submitButton = document.getElementById('submitButton');
+  const outputDiv = document.getElementById('output');
+
+  submitButton.addEventListener('click', function() {
+    const inputValue = inputText.value;
+    const newElement = document.createElement('p');
+    newElement.textContent = inputValue;
+    outputDiv.appendChild(newElement);
+    inputText.value = ''; // Limpa o campo de entrada
+  });
+</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+
+  .step {
+    display: none;
+  }
+
+  .step.active {
+    display: block;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="form-container">
+  <form id="form">
+    <div class="step active" id="step1">
+      <h2>Passo 1 de 2</h2>
+      <label for="name">Nome:</label>
+      <input type="text" id="name" required>
+      <div class="button-container">
+        <button type="button" onclick="nextStep(2)">Próximo</button>
+      </div>
+    </div>
+    <div class="step" id="step2">
+      <h2>Passo 2 de 2</h2>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <div class="button-container">
+        <button type="button" onclick="prevStep(1)">Anterior</button>
+        <button type="submit">Enviar</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+  let currentStep = 1;
+  const form = document.getElementById('form');
+  const steps = document.querySelectorAll('.step');
+
+  function nextStep(step) {
+    steps[currentStep - 1].classList.remove('active');
+    steps[step - 1].classList.add('active');
+    currentStep = step;
+  }
+
+  function prevStep(step) {
+    steps[currentStep - 1].classList.remove('active');
+    steps[step - 1].classList.add('active');
+    currentStep = step;
+  }
+</script>
+</body>
+</html>
